@@ -1,0 +1,78 @@
+:root {
+  --def-size: 1rem;
+  --important-size: 2rem;
+  --primary-color: #3b82f6;
+  --secondary-color: #6366f1;
+}
+
+div {
+  padding: 1rem;
+}
+
+.CSS .btn {
+  font-size: var(--def-size);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.CSS .btn.important {
+  font-size: var(--important-size);
+}
+
+.CSS .btn:disabled {
+  cursor: not-allowed;
+}
+
+/* Primary */
+
+.CSS .btn-primary {
+  border: 0px;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.CSS .btn-primary:hover {
+  transform: scale(1.25);
+  background-color: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.CSS .btn-primary:active {
+  border-bottom: 4px solid var(--primary-color);
+}
+
+/* Secondary */
+
+.CSS .btn-secondary {
+  border: 0px;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--secondary-color);
+  font-size: 0.5rem;
+  color: white;
+}
+
+.CSS .btn-secondary:hover {
+  transform: scale(1.25);
+  background-color: white;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.CSS .btn-secondary:active {
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+/* Ugly */
+.CSS .btn-ugly {
+  border: 5px dotted #d97706;
+  color: #d97706;
+  padding: 1rem 1.1rem;
+  box-shadow: #d97706 0px 20px 30px -10px;
+}
+
+.CSS .btn-ugly i {
+  color: black;
+  font-size: 1.5rem;
+}
