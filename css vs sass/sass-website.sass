@@ -1,0 +1,58 @@
+@import ./sass-variables, ./sass-website-buttons, ./sass-website-rects, ./sass-website-leadings, ./sass-themes
+
+@mixin theme-button($bg-color, $text-color)
+    background-color: $bg-color
+    color: $text-color
+    border: none
+    width: 3rem
+    height: 1.5rem
+    cursor: pointer
+
+    &:hover
+        color: $bg-color
+        background-color: $text-color
+        margin: 0 0.25rem
+
+html[data-theme='light']
+    background-color: white
+    color: black
+    font-size: x-large
+
+html[data-theme='dark']
+    background-color: $dark-bg
+    color: $dark-text
+    font-size: x-large
+
+body
+    width: $container-width
+    margin: 0 auto
+    padding: 0
+
+header
+    background-color: #F43F5E
+    height: 100px
+    border-radius: 0.5rem
+    display: flex
+    justify-content: center
+    align-items: center
+
+main
+    margin-top: 2rem
+    padding: 1rem
+    border-radius: 0.5rem
+    border: 1px solid black
+
+#dark
+    @include theme-button($dark-theme-bg, $dark-theme-text)
+
+#light
+    @include theme-button($light-theme-bg, $light-theme-text)
+
+.sec-buttons
+    .standard
+        margin-bottom: 3rem
+
+.sec-rectangles
+    display: grid
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+    gap: 1rem

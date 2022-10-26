@@ -1,0 +1,24 @@
+.leading {
+  margin: 0;
+  padding: 0;
+}
+
+.leading-1 {
+  font-size: calc(var(--text-size, 1rem) * 4);
+  margin: 1rem 0;
+}
+
+.leading-2 {
+  font-size: calc(var(--text-size, 1rem) * 3);
+  margin: 0.75rem 0;
+}
+
+.leading-3 {
+  font-size: calc(var(--text-size, 1rem) * 2);
+  margin: 0.5rem 0;
+}
+
+.leading-4 {
+  font-size: calc(var(--text-size, 1rem) * 1.5);
+  margin: 0.25rem 0;
+}

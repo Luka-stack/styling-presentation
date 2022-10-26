@@ -1,0 +1,29 @@
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 1.75rem 0;
+}
+
+h3 {
+  margin: 0.5rem 0;
+}
+
+.leading {
+  margin: 0;
+  padding: 0;
+}
+.leading-1 {
+  font-size: 4rem;
+}
+.leading-2 {
+  font-size: 3rem;
+}
+.leading-3 {
+  font-size: 2rem;
+}
+.leading-4 {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=sass-website-leadings.css.map */

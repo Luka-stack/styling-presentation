@@ -1,0 +1,49 @@
+.btn {
+  padding: 0.3rem 1rem;
+  font-weight: 500;
+  border: none;
+  color: #e2e8f0;
+  border-radius: 0.3rem;
+  min-width: 6rem;
+  min-height: 1.6rem;
+  cursor: pointer;
+}
+.btn:disabled, .btn:disabled:hover {
+  cursor: not-allowed;
+  background-color: #cbd5e1;
+  color: #64748b;
+  border: none;
+}
+.btn:disabled:active {
+  transform: none;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.btn-primary {
+  background-color: #2563eb;
+}
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+.btn-primary-inverted {
+  background-color: #e2e8f0;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+.btn-primary-inverted:hover {
+  color: #e2e8f0;
+  background-color: #2563eb;
+}
+.btn-danger {
+  background-color: #e11d48;
+}
+.btn-danger:hover {
+  background-color: #be123c;
+}
+.btn-secondary {
+  background-color: #059669;
+}
+.btn-secondary:hover {
+  background-color: #047857;
+}/*# sourceMappingURL=sass-website-buttons.css.map */

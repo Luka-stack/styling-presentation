@@ -1,0 +1,50 @@
+@import ./sass-variables
+
+.btn
+    padding: 0.3rem 1rem
+    font-weight: 500
+    border: none
+    color: $dark-text
+    border-radius: 0.3rem
+    min-width: 6rem
+    min-height: 1.6rem
+    cursor: pointer
+
+    &:disabled, &:disabled:hover
+        cursor: not-allowed
+        background-color: $disabled-bg
+        color: $disabled-text
+        border: none
+
+    &:disabled:active
+        transform: none
+
+    &:active
+        transform: scale(0.95)
+
+    &-primary
+        background-color: $primary
+
+        &:hover
+            background-color: $primary-hover
+
+    &-primary-inverted
+        background-color: $dark-text
+        color: $primary
+        border: 2px solid $primary
+
+        &:hover
+            color: $dark-text
+            background-color: $primary
+
+    &-danger
+        background-color: $danger
+
+        &:hover
+            background-color: $danger-hover
+
+    &-secondary
+        background-color: $secondary
+
+        &:hover
+            background-color: $secondary-hover

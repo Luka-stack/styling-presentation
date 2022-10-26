@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="sass-website.css" />
+    <!-- <link rel="stylesheet" href="sass-themes.css" /> -->
+
+    <title>SASS Is Fun</title>
+  </head>
+  <body>
+    <header id="header" class="theme--default">
+      <button id="dark">Dark</button>
+      <button id="light">Light</button>
+      <p class="badge">test themes</p>
+    </header>
+
+    <main>
+      <h1>Buttons</h1>
+      <section class="sec-buttons">
+        <div class="standard">
+          <h3>Standard</h3>
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-danger">Danger</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-primary-inverted">Inverted</button>
+        </div>
+        <div class="disabled">
+          <h3>Disabled</h3>
+          <button class="btn btn-primary" disabled>Primary</button>
+          <button class="btn btn-danger" disabled>Danger</button>
+          <button class="btn btn-secondary" disabled>Secondary</button>
+          <button class="btn btn-primary-inverted" disabled>Inverted</button>
+        </div>
+      </section>
+
+      <h1>Rectangles</h1>
+      <section class="sec-rectangles">
+        <div class="rect rect-1 rect-primary">
+          <div class="rect-x-1">
+            <div class="rect-x-2"></div>
+          </div>
+        </div>
+        <div class="rect rect-2 rect-danger">
+          <div class="rect-x-1">
+            <div class="rect-x-2"></div>
+          </div>
+        </div>
+        <div class="rect rect-3 rect-secondary">
+          <div class="rect-x-1">
+            <div class="rect-x-2"></div>
+          </div>
+        </div>
+      </section>
+
+      <h1>Headers</h1>
+      <section class="sec-text">
+        <h1 class="leading leading-1">Header 1</h1>
+        <h2 class="leading leading-2">Header 2</h2>
+        <h3 class="leading leading-3">Header 3</h3>
+        <h4 class="leading leading-4">Header 4</h4>
+      </section>
+    </main>
+
+    <script>
+      const lightBtn = document.getElementById('light');
+      const darkBtn = document.getElementById('dark');
+      const header = document.getElementById('header');
+
+      lightBtn.onclick = () => {
+        document.documentElement.setAttribute('data-theme', 'light');
+        header.className = 'theme--light';
+      };
+
+      darkBtn.onclick = () => {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        header.className = 'theme--dark';
+      };
+    </script>
+  </body>
+</html>
